@@ -522,7 +522,7 @@
                         {% set norm_bounds = norm_bounds or [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0] %}
                         {% for i in range(14) %}
                         <div class="form-group">
-                            <label for="norm_bound_{{ i }}">Норма для U{{ i + 1 }}:</label>
+                            <label for="norm_bound_{{ i }}">Норма для C{{ i + 1 }}:</label>
                             <input type="number" id="norm_bound_{{ i }}" name="norm_bound_{{ i }}" step="0.01" value="{{ norm_bounds[i] }}" class="randomizable" required>
                         </div>
                         {% endfor %}
